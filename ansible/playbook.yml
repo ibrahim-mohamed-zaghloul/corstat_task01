@@ -117,9 +117,9 @@
         src: "{{ item.src }}"
         dest: "{{ item.dest }}"
       with_items:
-        - { src: '../docker/docker-compose.yaml', dest: '/home/ubuntu/docker-compose.yaml' }
-        - { src: '../docker/Dockerfile', dest: '/home/ubuntu/Dockerfile' }
-        - { src: '../docker/sonar.properties', dest: '/home/ubuntu/sonar.properties' }
+        - { src: '../Docker/docker-compose.yaml', dest: '/home/ubuntu/docker-compose.yaml' }
+        - { src: '../Docker/Dockerfile', dest: '/home/ubuntu/Dockerfile' }
+        - { src: '../Docker/sonar.properties', dest: '/home/ubuntu/sonar.properties' }
 
     - name: Run Docker Compose
       command: docker-compose up -d
