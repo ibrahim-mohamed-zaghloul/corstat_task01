@@ -30,7 +30,7 @@ jobs:
         run: terraform apply -auto-approve
 
       - name: create Inventory
-        run: terraform output corstat_ec2_ip | tail -n +2 | sed 's/"//g' >> ansible/inventory
+        run: terraform output corstat_ec2_ip | tail -n +2 | sed 's/"//g' >> ansible/inventory.ini
 
       - name: Show Inventory
         run: cat ansible/inventory.ini
