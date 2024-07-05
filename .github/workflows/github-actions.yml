@@ -50,4 +50,4 @@ jobs:
       - name: Run Ansible Playbook
         run: |
           cd ansible
-          ansible-playbook -i inventory playbook.yaml
+          ansible-playbook -i inventory playbook.yml
