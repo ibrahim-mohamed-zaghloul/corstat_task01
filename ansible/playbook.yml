@@ -117,7 +117,7 @@
         src: "{{ item.src }}"
         dest: "{{ item.dest }}"
       with_items:
-        - { src: '../Docker/docker-compose.yaml', dest: '/home/ubuntu/docker-compose.yaml' }
+        - { src: '../Docker/docker-compose.yml', dest: '/home/ubuntu/docker-compose.yml' }
         - { src: '../Docker/Dockerfile', dest: '/home/ubuntu/Dockerfile' }
         - { src: '../Docker/sonar.properties', dest: '/home/ubuntu/sonar.properties' }
 
