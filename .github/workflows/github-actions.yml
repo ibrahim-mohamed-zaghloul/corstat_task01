@@ -29,17 +29,14 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve
 
-      - name: create Inventory
+      - name: create inventory file
         run: terraform output corstat_ec2_ip | tail -n +2 | sed 's/"//g' >> ansible/inventory
-
-      - name: Show Inventory
-        run: cat ansible/inventory
-
+        
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          chmod 400 ~/.ssh/id_rsa
   
       - name: Install Ansible
         run: |
@@ -50,4 +47,4 @@ jobs:
       - name: Run Ansible Playbook
         run: |
           cd ansible
-          ansible-playbook -i inventory playbook.yml
+          ansible-playbook playbook.yml
