@@ -54,7 +54,3 @@ resource "aws_internet_gateway" "igw" {
     Name = "nti-igw"
   }
 }
-
-# elastic ip
-
-resource "aws_eip" "eip" {}
