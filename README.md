@@ -66,12 +66,6 @@ This project provides a comprehensive infrastructure deployment solution using T
 - SonarQube: `http://[EC2_IP]/sonarqube`
 - Application: `http://[EC2_IP]/corstat`
 
-## Security Considerations
-
-- Uses security groups to restrict access
-- Implements reverse proxy
-- Utilizes SSH key-based authentication
-
 ## Customization
 
 Modify the following files to adapt to your environment:
