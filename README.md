@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project provides a comprehensive infrastructure deployment solution using Terraform, Docker, and Ansible for setting up a SonarQube server with a robust network configuration on AWS.
+This project provides a comprehensive infrastructure deployment solution using Terraform, Docker, and Ansible for setting up a server hosting two services and forwarding traffic based on requests sent to the server using Nginx with a robust network configuration on AWS.
 
 ## Components
 
