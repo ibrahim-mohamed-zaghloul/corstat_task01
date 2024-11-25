@@ -36,7 +36,7 @@ This project provides a comprehensive infrastructure deployment solution using T
 #### Key Files
 - `playbook.yml`: Main Ansible playbook
 - `ansible.cfg`: Ansible configuration
-- `ports.conf`: Apache port configuration
+- `ports.conf`: Nginx port configuration
 - `reverse-proxy.conf`: Nginx reverse proxy setup
 
 ### 4. GitHub Actions
