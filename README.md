@@ -30,7 +30,7 @@ This project provides a comprehensive infrastructure deployment solution using T
 
 ### 3. Ansible Configuration
 - Automates server setup
-- Installs and configures Apache, Nginx, Docker
+- Installs and configures Apache, Nginx (as a reverse-proxy), Docker
 - Deploys Docker services
 
 #### Key Files
